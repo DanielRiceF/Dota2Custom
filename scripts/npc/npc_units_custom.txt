@@ -609,4 +609,170 @@
 		//----------------------------------------------------------------
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_WARD"
 	}
+	"npc_knuckles_crystal_maiden"
+	{
+        "BaseClass"             "npc_dota_creature"
+        "Model"                 "models/heroes/crystal_maiden/crystal_maiden.vmdl"
+        "ModelScale"            "1.5"
+        "Level"                 "25"
+        "IsSummoned"			"1"
+		"IsAncient"	        	"1"
+        "AutoAttacksByDefault"  "1"
+        "CanBeDominated"        "0"
+        "ConsideredHero"        "0"  
+        "Ability1"              "CrystalQueen_Damage"
+        "HealthBarOffset"       "140"
+        "HasInventory"          "0"
+        "ArmorPhysical"         "5"
+        "MagicalResistance"     "75"
+        "AttackCapabilities"    "DOTA_UNIT_CAP_NO_ATTACK"
+        "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+        "AttackDamageMin"       "1"
+        "AttackDamageMax"       "1"
+        "AttackRate"            "1.35"
+        "AttackAnimationPoint"  "0.5"
+        "AttackAcquisitionRange" "500"
+        "BountyGoldMin"         "100"
+        "BountyGoldMax"         "100"
+        "BoundsHullName"        "DOTA_HULL_SIZE_SMALL"
+        "RingRadius"            "50"
+        "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+        "MovementSpeed"         "425"
+        "MovementTurnRate"      "0.4"
+        "StatusHealth"          "750"
+        "StatusHealthRegen"     "15"
+        "StatusMana"            "100"
+        "StatusManaRegen"       "50"
+        "VisionDaytimeRange"    "1200"
+        "VisionNighttimeRange"  "1800"
+        "TeamName"              "DOTA_TEAM_NEUTRALS"
+        "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+        "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"  
+
+       	"Creature"
+		{
+    		"AttachWearables"
+    		{
+    			"Wearable1" { "ItemDef" "6573" }
+    			"Wearable2" { "ItemDef" "7385" }
+    			"Wearable4" { "ItemDef" "9205" }
+    			"Wearable5" { "ItemDef" "5486" }
+    		}
+		}
+	}
+	
+	//=================================================================================
+	// Королева Огня
+	//=================================================================================
+	
+	"npc_knuckles_lina"
+	{
+        "BaseClass"             "npc_dota_creature"
+        "Model"                 "models/heroes/lina/lina.vmdl"
+        "ModelScale"            "1.5"
+        "Level"                 "25"
+		"IsSummoned"	        "1"
+		"IsAncient"				"1"
+        "HealthBarOffset"       "140"
+        "HasInventory"          "0"
+        "AutoAttacksByDefault"  "1"
+        "CanBeDominated"        "0"
+        "ConsideredHero"        "0"
+        "Ability1"              "lina_dragon_slave_uganda"
+		"Ability2"				"lina_light_strike_array"
+        "ArmorPhysical"         "5"
+        "MagicalResistance"     "75"
+        "AttackCapabilities"    "DOTA_UNIT_CAP_NO_ATTACK"
+        "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+        "AttackDamageMin"       "1"
+        "AttackDamageMax"       "1"
+        "AttackRate"            "1.35"
+        "AttackAnimationPoint"  "0.5"
+        "AttackAcquisitionRange" "500"
+        "AttackRange"           "1"
+        "BountyGoldMin"         "100"
+        "BountyGoldMax"         "100"
+        "BoundsHullName"        "DOTA_HULL_SIZE_SMALL"
+        "RingRadius"            "50"
+        "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+        "MovementSpeed"         "425"
+        "MovementTurnRate"      "0.4"
+        "StatusHealth"          "1500"
+        "StatusHealthRegen"     "15"
+        "StatusMana"            "1000"
+        "StatusManaRegen"       "50"
+        "VisionDaytimeRange"    "1200"
+        "VisionNighttimeRange"  "1800"
+        "TeamName"              "DOTA_TEAM_NEUTRALS"
+        "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+        "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"  
+
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1" { "ItemDef" "4794" }
+				"Wearable2" { "ItemDef" "8003" }
+				"Wearable3" { "ItemDef" "7741" }
+			}
+		}
+	}
+	
+	//=================================================================================
+	// Королева Ветра
+	//=================================================================================
+	
+	"npc_knuckles_windrunner"
+	{
+        "BaseClass"             "npc_dota_creature"
+        "Model"                 "models/heroes/windrunner/windrunner.vmdl"
+        "ModelScale"            "1.5"
+        "Level"                 "25"
+		"IsSummoned"	        "1"
+		"IsAncient"				"1"
+        "HealthBarOffset"       "140"
+        "HasInventory"          "0"
+        "AutoAttacksByDefault"  "1"
+        "CanBeDominated"        "0"
+        "ConsideredHero"        "0"  
+        "Ability1"              "powershot_uganda"
+		"Ability2"				"windrunner_focusfire"
+        "ArmorPhysical"         "0"
+        "MagicalResistance"     "75"
+        "AttackCapabilities"    "DOTA_UNIT_CAP_RANGED_ATTACK"
+        "AttackDamageType"      "DAMAGE_TYPE_ArmorPhysical"
+		"ProjectileModel"		"particles/units/heroes/hero_windrunner/windrunner_base_attack.vpcf"
+        "AttackDamageMin"       "80"
+        "AttackDamageMax"       "80"
+        "AttackRate"            "0.9"
+        "AttackAnimationPoint"  "0.5"
+        "AttackAcquisitionRange" "500"
+        "AttackRange"           "950"
+        "BountyGoldMin"         "100"
+        "BountyGoldMax"         "100"
+        "BoundsHullName"        "DOTA_HULL_SIZE_SMALL"
+        "RingRadius"            "50"
+        "MovementCapabilities"  "DOTA_UNIT_CAP_MOVE_GROUND"
+        "MovementSpeed"         "425"
+        "MovementTurnRate"      "0.4"
+        "StatusHealth"          "1150"
+        "StatusHealthRegen"     "15"
+        "StatusMana"            "1000"
+        "StatusManaRegen"       "50"
+        "VisionDaytimeRange"    "1200"
+        "VisionNighttimeRange"  "1800"
+        "TeamName"              "DOTA_TEAM_NEUTRALS"
+        "CombatClassAttack"     "DOTA_COMBAT_CLASS_ATTACK_BASIC"
+        "UnitRelationShipClass" "DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"  
+
+		"Creature"
+		{
+			"AttachWearables"
+			{
+				"Wearable1" { "ItemDef" "7978" }
+				"Wearable2" { "ItemDef" "6687" }
+				"Wearable3" { "ItemDef" "8962" }
+			}
+		}
+	}
 }	

@@ -1,5 +1,5 @@
-LinkLuaModifier( "modifier_pump_spooky_aura", "abilities/heroes/pump.lua", LUA_MODIFIER_MOTION_NONE )
-LinkLuaModifier( "modifier_pump_spooky", "abilities/heroes/pump.lua", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_pump_spooky_aura", "abilities/heroes/roma_um/pump.lua", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_pump_spooky", "abilities/heroes/roma_um/pump.lua", LUA_MODIFIER_MOTION_NONE )
 
 pump_spooky = class({})
 
@@ -18,7 +18,7 @@ function modifier_pump_spooky_aura:OnCreated()
     
     self.flag = DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES
 
-    self:GetCaster():StartGesture(ACT_DOTA_CAST_ABILITY_6)
+    --self:GetCaster():StartGesture(ACT_DOTA_CAST_ABILITY_6)
 
     EmitSoundOn("pump_dance", self:GetParent())
     self.origin = self:GetCaster():GetAbsOrigin()
@@ -67,7 +67,7 @@ end
 function modifier_pump_spooky_aura:OnDestroy()
     
     StopSoundOn("pump_dance", self:GetParent())
-    self:GetParent():FadeGesture(ACT_DOTA_CAST_ABILITY_6)
+    --self:GetParent():FadeGesture(ACT_DOTA_CAST_ABILITY_6)
     ParticleManager:DestroyParticle(self.particle, true)
 end
 
