@@ -693,4 +693,40 @@
 		"AbilityCooldown"				"50 40 30 20"
 		"AbilityManaCost"				"50 50 50 50"
 	}
+
+	"pump_spooky"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/heroes/pump.lua"
+		"AbilityTextureName"			"pump_spooky"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"AbilityCooldown"				"80 70 60"
+		"AbilityManaCost"				"200 250 300"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+		"HasScepterUpgrade"				"1"
+
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"radius"			"520"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"duration"			"6"
+				"LinkedSpecialBonus"	"special_bonus_birzha_pump_4"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"damage"			"200 250 300"
+			}
+		}
+	}
 }
