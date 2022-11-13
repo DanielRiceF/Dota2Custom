@@ -3,7 +3,7 @@
 	MinimalPrecache = 0
 	HeroGuidesSupported = 1
 	ForceDefaultGuide = 0
-	EnablePickRules = 1
+	EnablePickRules = 0
 	PenaltiesEnabled = 1
 	EventGame = 1
 	DrawCustomTeamHeroesOnMinimap = 1

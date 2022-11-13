@@ -729,4 +729,26 @@
 			}
 		}
 	}
+	"Ns_Tricks"
+	{
+		"BaseClass"					"ability_lua"
+		"ScriptFile"				"abilities/heroes/ns.lua"
+		"AbilityTextureName"        "Ns/Tricks"
+		"AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"     "DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"     "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"	"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitDamageType"     "DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"			"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"		"SPELL_DISPELLABLE_NO"
+		"AbilityCooldown"           "15"
+		"AbilityManaCost"           "100 90 80 70"
+		"AoERadius" 				"650"
+		"AbilityCastRange" 			"650"
+
+	    "precache"
+        {
+            "particle"          "particles/ns/ns_tricks.vpcf"
+        }																				
+	}
 }
