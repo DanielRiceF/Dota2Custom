@@ -8,4 +8,5 @@
 	//--------------- ENABLED -----------------
 	"npc_dota_hero_abaddon"				"1"
 	"npc_dota_hero_pudge"				"1"
+	"npc_dota_hero_shadow_shaman"		"1"
 }
