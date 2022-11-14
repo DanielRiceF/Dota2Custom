@@ -758,7 +758,7 @@
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"abilities/heroes/roma_um/knuckles.lua"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-		"AbilityTextureName"			"Knuckles/Queens"
+		"AbilityTextureName"			"naga_siren_mirror_image"
 		"AbilityCooldown"				"70 60 50 40"
 		"AbilityManaCost"				"100"
 		"AbilityCastPoint"				"0.35"
@@ -975,7 +975,7 @@
 		"AbilityUnitTargetFlags" 		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES" 
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
-		"AbilityTextureName"			"mirana_arrow"
+		"AbilityTextureName"			"rubick_null_field"
 		"AbilityCastRange"				"600"
 		"LevelsBetweenUpgrades"			"2"
 		
@@ -1001,6 +1001,148 @@
 				"CalculateSpellDamageTooltip"	"0"
 			}
 			
+		}
+	}
+	"azazin_gayaura"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/heroes/linar_josk/azazin.lua"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName" 			"pudge_meat_hook"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityUnitTargetFlags"        "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityCastRange"				"400"
+		"LevelsBetweenUpgrades"			"2"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"damage"					"2 4 6 8"
+				"LinkedSpecialBonus"		"special_bonus_birzha_azazin_5"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"400"
+			}			
+		}
+	}
+	"Vjlink_python"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/heroes/linar_josk/vjlink.lua"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"		
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"	
+		"AbilityTextureName"			"huskar_life_break"
+		"AbilityCastAnimation"			"ACT_DOTA_SLARK_POUNCE"
+		"AbilityCooldown"				"12"	
+		"AbilityCastRange"				"550"
+		"HasShardUpgrade"				"1"
+
+		"precache"
+		{
+			"soundfile" "soundevents/krik/hero/game_sounds_krik.vsndevts"
+			"particle"  "particles/units/heroes/hero_huskar/huskar_life_break.vpcf"
+			"particle"  "particles/units/heroes/hero_huskar/huskar_life_break_cast.vpcf"
+			"particles" "particles/status_fx/status_effect_huskar_lifebreak.vpcf"
+		}
+
+	 	"AbilitySpecial"
+	 	{
+	 		"01"
+	 		{
+	 			"var_type"							"FIELD_FLOAT"
+	 			"health_damage"						"10 15 20 25"
+	 			"LinkedSpecialBonus"				"special_bonus_birzha_vjlink_2"
+	 			"CalculateSpellDamageTooltip"	"0"
+	 		}
+	 		"02"
+	 		{
+	 			"var_type"							"FIELD_INTEGER"
+	 			"movespeed_slow"					"-15"
+	 		}
+	 		"03"
+	 		{
+	 			"var_type"							"FIELD_FLOAT"
+	 			"slow_duration"						"1 2 3 4"
+	 		}
+	 	}
+	}
+	"Bogdan_Ultimate"
+    {
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/heroes/linar_josk/bogdan.lua"
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+        "AbilityCooldown"               "60"
+        "AbilityManaCost"            	"100 125 150"
+        "AbilityType" 					"DOTA_ABILITY_TYPE_ULTIMATE"
+        "AbilityTextureName"            "drow_ranger_marksmanship"
+		"LevelsBetweenUpgrades"			"2"
+
+        "AbilitySpecial" 
+        {
+            "01" 
+            {
+                "var_type" "FIELD_FLOAT"
+                "str" 		"40 50 60"
+            }
+
+            "02" 
+            {
+                "var_type" "FIELD_FLOAT"
+                "agi" 		"8 9.5 11"
+            }
+
+            "03" 
+            {
+                "var_type" "FIELD_INTEGER"
+                "int" 		"1 2 3"
+            }
+        }
+    }
+    "saitama_fast_attack"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/heroes/linar_josk/saitama"
+		"AbilityTextureName"			"elder_titan_natural_order"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityCooldown"				"22 19 16 13"
+		"AbilityManaCost"				"75"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"LevelsBetweenUpgrades"			"2"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"attack_count"				"2 3 4 5"
+				//"LinkedSpecialBonus"		"special_bonus_birzha_saitama_6"
+			}
+			//"02"
+			//{
+			//	"var_type"					"FIELD_INTEGER"
+			//	"base_damage"				"20 30 40 50"
+			//}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"damage_from_attack"		"20 30 40 50"
+				//"LinkedSpecialBonus"		"special_bonus_birzha_saitama_1"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"damage_from_attack_minus"	"-80 -70 -60 -50"
+				//"LinkedSpecialBonus"		"special_bonus_birzha_saitama_1"
+			}
 		}
 	}
 }

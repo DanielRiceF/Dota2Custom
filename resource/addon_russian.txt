@@ -18,9 +18,9 @@
 		"DOTA_Tooltip_modifier_fountain_aura_effect_lua"					"Аура фонтана"
 		"DOTA_Tooltip_modifier_fountain_aura_effect_lua_Description"		"Лечение"
 
-		"DOTA_Tooltip_modifier_invis_revealed"			"Невидимость раскрыта"
+		"DOTA_Tooltip_modifier_invis_revealed"			"Тебя раскрыли пидорас"
 
-		"DOTA_Tooltip_ability_item_bag_of_gold"			"300 золота"
+		"DOTA_Tooltip_ability_item_bag_of_gold"			"300 бачей"
 		"DOTA_Tooltip_ability_item_treasure_chest"		"Сундук с сокровищами"
 
 		"npc_dota_creature_basic_zombie"				"Зомби"
@@ -56,5 +56,28 @@
 		//"DOTA_Tooltip_ability_item_ward_sentry_Description"							"<h1>Use: Plant</h1> Plants a Sentry Ward, an invisible watcher that grants True Sight, the ability to see invisible enemy units and wards, to any existing allied vision within a %true_sight_range% radius.<br>Lasts %duration_minutes_tooltip% minutes.<br><br>Does not grant ground vision.<br>Hold Control to give one Sentry Ward to an allied hero. <br/><br/>Range: %abilitycastrange%\n\n<font color='#70EA72'>In Overthrow, Sentry Wards last 6 minutes.</font>"
 
 		"DOTA_Tooltip_ability_item_dust_Description"								"<h1>Использование: Reveal</h1>Делает всех невидимых героев в радиусе %radius% видимыми и замедляет их на %movespeed%%%. Эффект длится %duration% сек. Раскрытие невидимости наносит %damage% урона.\n\n<font color='#70EA72'>В этом режиме у предмета уменьшена перезарядка.</font>"
-	}
+	
+	
+	//=================================================================================================================
+    // Shadow Shaman / Рома (Умный)
+    //=================================================================================================================
+
+	 "npc_dota_hero_shadow_shaman" "Рома (умный)"
+    
+     "DOTA_Tooltip_ability_Ns_Tricks" "Рома лудоманит"
+     "DOTA_Tooltip_ability_Ns_Tricks_Description" "Рома ставит ставки на турнир и начинает лудоманить. <br> 1. Застанить  </br> <br> 2. Превратить в овцу  </br> <br> 3. Кинуть бессилие </br> <br> 4. Нанести дамаг </br> <br> 5. Убить врага  </br> <br> 6. Дать урон </br>"
+     "DOTA_Tooltip_ability_Ns_Tricks_lore" "Рома лох"
+
+     "DOTA_Tooltip_ability_Knuckles_queens" "Рома призывает Элину."
+     "DOTA_Tooltip_ability_Knuckles_queens_Description" "В разное время года Рома встречается с Элиной <br> 1. Осень и весна - Windranger </br> <br> 2. Зима - Crystal Maiden </br>  <br> 3. Лето - Lina </br>"
+     "DOTA_Tooltip_ability_Knuckles_queens_lore" "Рома лох"
+
+     "DOTA_Tooltip_ability_код_скилла" "название скилла"
+     "DOTA_Tooltip_ability_код_скилла_Description" "описание скилла"
+     "DOTA_Tooltip_ability_код_скилла_lore" "лор скилла"
+
+     "DOTA_Tooltip_ability_pump_spooky" "Курсы по копирайтингу"
+     "DOTA_Tooltip_ability_pump_spooky_Description" "Рома начинает обучать всех копирайтингу в радиусе 600 "
+     "DOTA_Tooltip_ability_pump_spooky_lore" "Рома лох"
+    }
 }
