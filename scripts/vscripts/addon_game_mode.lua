@@ -83,7 +83,9 @@ function COverthrowGameMode:InitGameMode()
 	
 --	CustomNetTables:SetTableValue( "test", "value 1", {} );
 --	CustomNetTables:SetTableValue( "test", "value 2", { a = 1, b = 2 } );
-
+	CreateUnitByName("npc_dota_hero_pudge", Vector(0,0,100), true, nil, nil, DOTA_TEAM_CUSTOM_1) --[[Returns:handle
+	Creates a DOTA unit by its dota_npc_units.txt name ( szUnitName, vLocation, bFindClearSpace, hNPCOwner, hUnitOwner, iTeamNumber )
+	]]
 	self.m_bFillWithBots = GlobalSys:CommandLineCheck( "-addon_bots" )
 	self.m_bFastPlay = GlobalSys:CommandLineCheck( "-addon_fastplay" )
 

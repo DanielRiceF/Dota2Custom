@@ -707,8 +707,7 @@
 		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
 		"HasScepterUpgrade"				"1"
-
-
+		"LevelsBetweenUpgrades"			"6"
 		"AbilitySpecial"
 		{
 			"01"
@@ -746,6 +745,8 @@
 		"AbilityManaCost"           "100 90 80 70"
 		"AoERadius" 				"650"
 		"AbilityCastRange" 			"650"
+		"AbilityType"				"DOTA_ABILITY_TYPE_BASIC"
+		"LevelsBetweenUpgrades"		"2"
 
 	    "precache"
         {
@@ -761,9 +762,10 @@
 		"AbilityCooldown"				"70 60 50 40"
 		"AbilityManaCost"				"100"
 		"AbilityCastPoint"				"0.35"
-		"RequiredLevel"          		"3"
+		"RequiredLevel"          		"1"
 		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
-
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"LevelsBetweenUpgrades"			"2"
 		"AbilitySpecial"
 		{
 			"01"
@@ -962,6 +964,43 @@
 				"var_type"						"FIELD_FLOAT"
 				"damage"						"50"
 			}
+		}
+	}
+	"Magic_Reduction"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/heroes/roma_um/passive_magic_red.lua"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetFlags" 		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES" 
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"AbilityTextureName"			"mirana_arrow"
+		"AbilityCastRange"				"600"
+		"LevelsBetweenUpgrades"			"2"
+		
+		"AbilityCastRange"				"600"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"aura_radius"		"600"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"aura_damage"		"-7.0 -11.0 -46.0 -89.0" 
+				"CalculateSpellDamageTooltip"	"0"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_FLOAT"
+				"aura_damage_interval"		"0.2" 
+				"CalculateSpellDamageTooltip"	"0"
+			}
+			
 		}
 	}
 }
