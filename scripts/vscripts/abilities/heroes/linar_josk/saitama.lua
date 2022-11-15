@@ -76,7 +76,7 @@ end
 
 function modifier_saitama_fast_attack:GetModifierPreAttack_BonusDamage( params )
 	--if IsServer() then
-		return self.base_damage * 100 / (100+self.damage_from_attack)
+		return self.base_damage * (100 / (100+self.damage_from_attack))
 	--end
 end
 

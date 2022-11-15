@@ -59,7 +59,7 @@
 		"AttributeBaseIntelligence"		"18"
 		"AttributeIntelligenceGain"		"1.500000"
 		"AttributePrimary"				"DOTA_ATTRIBUTE_STRENGTH"
-		"ArmorPhysical"		"4"
+		"ArmorPhysical"					"4"
 
 		// "Ability10"		"special_bonus_hp_250"
 		// "Ability11"		"special_bonus_movement_speed_25"
@@ -69,5 +69,38 @@
 		// "Ability15"		"special_bonus_attack_range_100"
 		// "Ability16"		"special_bonus_birzha_bukin_2"
 		// "Ability17"		"special_bonus_birzha_bukin_3"
+	}
+
+	"npc_dota_hero_sniper"
+	{
+        "Ability1" 	"Bullet_BulletInTheHead"
+        "Ability2"	""
+        "Ability3" 	""
+		"Ability4"	""
+		"Ability5"	""
+		"Ability6"	""
+		"Ability25"	""
+
+		"AttributeBaseStrength"			"19"
+		"AttributeStrengthGain"			"1.700000"
+		"AttributeBaseIntelligence"		"18"
+		"AttributeIntelligenceGain"		"2.600000"
+		"AttributeBaseAgility"			"26"
+		"AttributeAgilityGain"			"3.100000"
+		"AttackDamageMin"				"55"
+		"AttackDamageMax"				"55"
+		"MovementSpeed"					"300"
+		"AttributePrimary"				"DOTA_ATTRIBUTE_AGILITY"
+		"difficulty"					"Pick_medium"
+		"role_hero"						"Pick_Carry"
+
+		"Ability10"						""
+		"Ability11"						""
+		"Ability12"						""
+		"Ability13"						""
+		"Ability14"						""
+		"Ability15"						""
+		"Ability16"						""
+		"Ability17"						""
 	}
 }

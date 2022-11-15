@@ -10,4 +10,5 @@
 	"npc_dota_hero_pudge"				"1"
 	"npc_dota_hero_shadow_shaman"		"1"
 	"npc_dota_hero_ursa"				"1"
+	npc_dota_hero_sniper				"1"
 }
