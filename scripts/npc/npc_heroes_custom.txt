@@ -136,4 +136,37 @@
 		"Ability16"						""
 		"Ability17"						""
 	}
+	"npc_dota_hero_weaver"
+	{
+		"override_hero"				"npc_dota_hero_weaver"
+		"ModelScale"				"1.1"
+       	"AbilityLayout" 			"4" 
+       	
+        "Ability1" 					"dzhin_quite_walk"
+		"Ability2" 					"guts_cannon"
+		"Ability3" 					"evrei_zhad"
+		"Ability4" 					"Red_HUSTLE"
+		"Ability5" 					""
+		"Ability6"              	""
+		//"Ability25"				""
+		
+		"AttackDamageMin"		"33"
+		"AttackDamageMax"		"35"
+
+		"AttributePrimary"			"DOTA_ATTRIBUTE_AGILITY"
+		"AttributeBaseStrength"		"19"
+		"AttributeStrengthGain"		"2"
+		"AttributeBaseAgility"		"25"
+		"AttributeAgilityGain"		"3"
+		"AttributeBaseIntelligence"		"18"
+		"AttributeIntelligenceGain"		"2.3"
+		"AttributePrimary"				"DOTA_ATTRIBUTE_AGILITY"
+		"ArmorPhysical"		"0"
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackRate"				"1.6"
+		"BaseAttackSpeed"			"100"
+		"AttackAnimationPoint"		"0.330000"
+		"AttackRange"				"160"
+
+	}
 }

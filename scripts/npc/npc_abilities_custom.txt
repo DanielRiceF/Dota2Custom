@@ -1419,5 +1419,205 @@
 			}
 		}
 	}
+	"dzhin_quite_walk"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/heroes/valya_krisa/dzhin.lua"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"AbilityTextureName"			"heroes/valya_krisa/inviz"
+		"AbilityCooldown"				"25"
+		"AbilityManaCost"				"75"
+		
+		"precache"
+		{
+			"soundfile" 	"soundevents/game_sounds_heroes/game_sounds_phantom_lancer.vsndevts"
+			"particle"		"particles/generic_hero_status/status_invisibility_start.vpcf" 
+		}
+		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"stun_duration"				"0.75 1 1.25 1.5"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_vision"				"20 30 40 50"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"bonus_movespeed"			"25 50 75 100"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"duration"					"20"
+			}
+		}
+	}
 	
+	"Red_HUSTLE"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/heroes/valya_krisa/red21.lua"
+		"AbilityTextureName"        	"heroes/valya_krisa/ult"
+		"AbilityBehavior"           	"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityCooldown"               "70"
+		"AbilityManaCost"               "135"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+
+		"AbilitySpecial"
+		{
+		    "01"
+		    {
+		        "var_type"          "FIELD_INTEGER"
+		        "attack_speed"             "100 150 200"
+		    }
+		    "02"
+		    {
+		        "var_type"          "FIELD_INTEGER"
+		        "duration"             "15"
+		        "LinkedSpecialBonus"	"special_bonus_birzha_red21_3"
+		    }
+		    "03"
+		    {
+		        "var_type"          "FIELD_INTEGER"
+		        "critical_damage"             "150 250 350"
+		    }
+		    "04"
+		    {
+		        "var_type"          "FIELD_INTEGER"
+		        "chance"             "50"
+		    }
+		}
+	}
+
+	"special_bonus_birzha_red21_3"
+	{
+		"BaseClass"						"special_bonus_undefined"														
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"value"					"5"
+			}			
+		}
+	}
+	//=================================================================================================================
+	// Украсть урон
+	//=================================================================================================================
+
+	"evrei_zhad"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/heroes/valya_krisa/jew.lua"	
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"AbilityTextureName"			"heroes/valya_krisa/uron"
+		
+		"precache"
+		{
+			"particle"  "particles/econ/items/slark/slark_ti6_blade/slark_ti6_blade_essence_shift_gold.vpcf"
+			"soundfile" "soundevents/game_sounds_heroes/game_sounds_slark.vsndevts"
+			"soundfile" "soundevents/game_sounds_heroes/game_sounds_ember_spirit.vsndevts"
+		}
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage_steal"			"2 3 4 5"
+				"CalculateSpellDamageTooltip"	"0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"10"
+			}
+		}
+	}
+
+	"special_bonus_birzha_jew_4"
+	{
+		"BaseClass"						"special_bonus_undefined"														
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"value"					"0"
+			}			
+		}
+	}
+	"guts_cannon"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/heroes/valya_krisa/guts"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"AbilityTextureName"   			"Guts/InbeddedCannon"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES" 
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
+		"AbilityCastRange"				"525 750 975 1200"
+		"AbilityCastPoint"				"0.3"
+		"AbilityCooldown"				"6"
+		"AbilityManaCost"				"30 25 20 15"
+		"HasScepterUpgrade"				"1"
+
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"move_slow"					"-50"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bomb_speed"			"1200"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"1 2 3 4"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"base_damage"			"100"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"attack_factor"			"-90 -80 -70 -60"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"attack_factor_tooltip"	"10 20 30 40"
+			}
+		}
+	}
 }

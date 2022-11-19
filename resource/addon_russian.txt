@@ -1,4 +1,4 @@
-﻿"lang"
+"lang"
 {
 	"Language"		"russian"
 	"Tokens"
@@ -68,16 +68,64 @@
      "DOTA_Tooltip_ability_Ns_Tricks_Description" "Рома ставит ставки на турнир и начинает лудоманить. <br> 1. Застанить  </br> <br> 2. Превратить в овцу  </br> <br> 3. Кинуть бессилие </br> <br> 4. Нанести дамаг </br> <br> 5. Убить врага  </br> <br> 6. Дать урон </br>"
      "DOTA_Tooltip_ability_Ns_Tricks_lore" "Рома лох"
 
-     "DOTA_Tooltip_ability_Knuckles_queens" "Рома призывает Элину."
+     "DOTA_Tooltip_ability_Knuckles_queens" "Рома призывает Элину"
      "DOTA_Tooltip_ability_Knuckles_queens_Description" "В разное время года Рома встречается с Элиной <br> 1. Осень и весна - Windranger </br> <br> 2. Зима - Crystal Maiden </br>  <br> 3. Лето - Lina </br>"
      "DOTA_Tooltip_ability_Knuckles_queens_lore" "Рома лох"
 
-     "DOTA_Tooltip_ability_код_скилла" "название скилла"
-     "DOTA_Tooltip_ability_код_скилла_Description" "описание скилла"
-     "DOTA_Tooltip_ability_код_скилла_lore" "лор скилла"
+     "DOTA_Tooltip_ability_Magic_Reduction" "Рома начинает поддерживать команду"
+     "DOTA_Tooltip_ability_Magic_Reduction_Description" "От чего у всех в радиусе 600 снижается сопротивление магий"
+     "DOTA_Tooltip_ability_Magic_Reduction_lore" "Рома лох"
 
      "DOTA_Tooltip_ability_pump_spooky" "Курсы по копирайтингу"
      "DOTA_Tooltip_ability_pump_spooky_Description" "Рома начинает обучать всех копирайтингу в радиусе 600 "
      "DOTA_Tooltip_ability_pump_spooky_lore" "Рома лох"
+
+     //=================================================================================================================
+    // ursa / линар (жесткий)
+    //=================================================================================================================
+ 
+     "npc_dota_hero_ursa" "Линар (Жесткий)"
+
+     "DOTA_Tooltip_ability_azazin_gayaura" "Дисперсия"
+     "DOTA_Tooltip_ability_azazin_gayaura_Description" ""
+     "DOTA_Tooltip_ability_azazin_gayaura_lore" ""
+
+     "DOTA_Tooltip_ability_Vjlink_python" "Прыжок хускара"
+     "DOTA_Tooltip_ability_Vjlink_python_Description" ""
+     "DOTA_Tooltip_ability_Vjlink_python_lore" ""
+
+     "DOTA_Tooltip_ability_Bogdan_Ultimate" "добавляет статы"
+     "DOTA_Tooltip_ability_Bogdan_Ultimate_Description" ""
+     "DOTA_Tooltip_ability_Bogdan_Ultimate_lore" ""
+
+     "DOTA_Tooltip_ability_saitama_fast_attack" "Быстрые тычки"
+     "DOTA_Tooltip_ability_saitama_fast_attack_Description" ""
+     "DOTA_Tooltip_ability_saitama_fast_attack_lore" ""
+
+  //=================================================================================================================
+    // Invoker / Алмас
+    //=================================================================================================================
+
+     "npc_dota_hero_weaver" "Валя (крыса)"
+
+     "DOTA_Tooltip_ability_dzhin_quite_walk" "Валя уходит в логово"
+     "DOTA_Tooltip_ability_dzhin_quite_walk_Description" "Уходит в инвиз <br> Нанеся атаку из инвиза Валентин оглушает противника </br>"
+     "DOTA_Tooltip_ability_dzhin_quite_walk_lore" "Валя лох"
+
+     "DOTA_Tooltip_ability_guts_cannon" "замедление"
+     "DOTA_Tooltip_ability_guts_cannon_Description" ""
+     "DOTA_Tooltip_ability_guts_cannon_lore" ""
+
+     "DOTA_Tooltip_ability_evrei_zhad" "Ворует урон"
+     "DOTA_Tooltip_ability_evrei_zhad_Description" ""
+     "DOTA_Tooltip_ability_evrei_zhad_lore" ""
+
+     "DOTA_Tooltip_ability_Red_HUSTLE" "добавляет урон"
+     "DOTA_Tooltip_ability_Red_HUSTLE_Description" ""
+     "DOTA_Tooltip_ability_Red_HUSTLE_lore" ""
+
+
+
+      "npc_dota_hero_invoker" "Алмас (Гений)"
     }
 }
