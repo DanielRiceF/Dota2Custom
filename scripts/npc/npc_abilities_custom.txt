@@ -1203,4 +1203,221 @@
 			}
 		}
 	}
+
+	"polnaref_stand_inside"
+	{
+		"BaseClass"					"ability_lua"
+		"ScriptFile"				"abilities/heroes/polnaref.lua"
+		"AbilityTextureName"        "polnaref/stand_inside"
+		"AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityUnitTargetTeam"     "DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"     "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityCooldown"           "45"
+		"AbilityCastRange" 			"150"
+		"MaxLevel"					"1"
+		"IsGrantedByScepter"			"1"
+		"HasScepterUpgrade"				"1"
+	}
+
+	"polnaref_stand"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/heroes/fedy/polnaref.lua"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityTextureName"        	"polnaref/stand"
+		"AbilityCooldown"				"45"
+		"AbilityManaCost"				"75"
+		"DisplayAdditionalHeroes"		"1"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"stand_hp"					"80"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"stand_damage"				"1 2 3 4"
+				"CalculateSpellDamageTooltip"	"0"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"stand_armor"				"0.25 0.5 0.75 1"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"stand_ms"					"310 315 320 325"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"1300"
+			}
+		}
+	}
+	"crescent_sky_rush"
+    {
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/heroes/ichigo/crescent_sky_rush.lua"
+   	 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+   	 	"AbilityCooldown" 				"14 13 12 11"
+   	 	"AbilityManaCost"				"50 60 70 80"
+   	 	"AbilityCastRange"				"1000"
+   	 	"AbilityCastPoint"				"0.3"
+   	 	"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
+   	 	"AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"   
+   	 	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
+        "SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+   	 	"AbilityTextureName"			"mirana_arrow"
+
+   	 	"AbilitySpecial"
+  	 	{
+	        "01"
+	        {
+	            "var_type"	 			"FIELD_INTEGER"
+	            "damage" 				"150 225 300 375"
+	        }
+		}
+    }
+    "bankai"
+    {
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/heroes/ichigo/crescent_sky_rush.lua"
+   	 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+   	 	"AbilityCooldown" 				"60"
+   	 	"AbilityManaCost"				"80 70 60"
+   	 	"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1" 
+   	 	"AbilityTextureName"			"ursa_enrage"
+   	 	"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+   	 	"LevelsBetweenUpgrades"			"6"
+
+   	 	"AbilitySpecial"
+  	 	{
+	        "01"
+	        {
+	            "var_type"	 			"FIELD_INTEGER"
+	            "duration" 				"20"
+	        }
+	        "02"
+	        {
+	            "var_type"	 			"FIELD_INTEGER"
+	            "move_speed" 			"150"
+	        }
+	        "03"
+	        {
+	            "var_type"	 			"FIELD_INTEGER"
+	            "attack_speed" 			"50 60 70"
+	        }
+		}
+    }
+    "crescent_sky_rush_bankai"
+    {
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/heroes/ichigo/crescent_sky_rush.lua"
+   	 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+   	 	"AbilityCooldown" 				"14 13 12 11"
+   	 	"AbilityManaCost"				"5 6 7 8"
+   	 	"AbilityCastRange"				"1000"
+   	 	"AbilityCastPoint"				"0.3"
+   	 	"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
+   	 	"AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"   
+   	 	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+        "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
+        "SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+   	 	"AbilityTextureName"			"drow_ranger_marksmanship"
+
+   	 	"AbilitySpecial"
+  	 	{
+	        "01"
+	        {
+	            "var_type"	 			"FIELD_INTEGER"
+	            "damage" 				"500 550 700 1000"
+	        }
+		}
+    }
+    "hichigo"
+    {
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/heroes/ichigo/crescent_sky_rush.lua"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+   	 	"AbilityCooldown" 				"50 45 40 35"
+   	 	"AbilityManaCost"				"50 60 70 80"
+   	 	"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"  
+        "SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+   	 	"AbilityTextureName"			"pudge_meat_hook"
+
+   	 	"AbilitySpecial"
+  	 	{
+	        "01"
+	        {
+	            "var_type"	 			"FIELD_INTEGER"
+	            "duration" 				"10 15 20 30"
+	        }
+	        "02"
+	        {
+	            "var_type"	 			"FIELD_INTEGER"
+	            "attack_range" 			"200"
+	        }
+	        "03"
+	        {
+	            "var_type"	 			"FIELD_INTEGER"
+	            "critical_p" 			"120 130 140 150"
+	        }
+	        "04"
+	        {
+	            "var_type"	 			"FIELD_INTEGER"
+	            "move_speed" 			"30 40 50 60"
+	        }
+		}
+    }
+    "shunpo"
+	{
+		"BaseClass"								"ability_lua"
+		"ScriptFile"							"abilities/heroes/ichigo/crescent_sky_rush"
+		"AbilityType"							"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"						"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+		"AbilityUnitTargetTeam"					"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"					"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		//"AbilityUnitTargetFlags"				"DOTA_UNIT_TARGET_FLAG_"
+
+		"SpellImmunityType"						"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellDispellableType"					"SPELL_DISPELLABLE_YES"
+
+		"AbilityManaCost"						"35 40 45 50"
+		"AbilityCastRange"						"900 1000 1100 1200"
+		"AbilityCastPoint"						"0.4"
+		"AbilityCooldown"						"16 13 10 7"
+
+		"precache"
+		{
+			//"soundfile"							"soundevents/heroes/anime_hero_ichigo.vsndevts"
+			"particle"							"particles/ichigo/ichigo_shunpo_start.vpcf"
+			"particle"							"particles/ichigo/ichigo_shunpo_contract_fast.vpcf"
+			"particle"							"particles/ichigo/ichigo_shunpo_contract_rope.vpcf"
+			"particle"							"particles/ichigo/ichigo_shunpo_expand.vpcf"
+			"particle"							"particles/ichigo/ichigo_shunpo_expand_fast.vpcf"
+			"particle"							"particles/ichigo/ichigo_shunpo_expand_rope.vpcf"
+			"particle"							"particles/ichigo/ichigo_shunpo_expand_rope_contract.vpcf"
+			"particle"							"particles/ichigo/ichigo_shunpo_expand_ground.vpcf"
+			"particle"							"particles/ichigo/ichigo_shunpo_expand_ground_dark.vpcf"
+			"particle"							"particles/ichigo/ichigo_shunpo_expand_model.vpcf"
+			"particle"							"particles/ichigo/ichigo_shunpo_end.vpcf"
+		}
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"range"							"800 900 1000 1100"
+				//"LinkedSpecialBonus"			"special_bonus_anime_ichigo_10L"
+			}
+		}
+	}
+	
 }
